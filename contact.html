@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div id="head">
+            <img src="images/inf.jpg" alt="covid">
+            <h1><a href="index.html">INF250 News</a></h1>
+            <h3><i>Your local news</i></h3>
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li class="lastitem"><a href="weather.html">Weather</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form id="email_form" action="https//:rest-api-ex.herokuapp.com/all" method="POST">
+            <h2>Contact Us:</h2>
+            <legend><b><u>Contact Information</u></b></legend>
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first name" required><br>
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autofocus required><br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" 
+                placeholder="If you have any comments or questions, feel free to type them here!">
+            </textarea>
+        </form>
+    </main>
+    <footer>
+        <p> &copy; Ben Dixon 2020</p>
+    </footer>
+</body>
+</html>
